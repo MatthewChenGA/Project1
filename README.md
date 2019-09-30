@@ -14,5 +14,4 @@ Project *Food Nutri-licious* will consist of a site that can help you retrieve i
 
 * Maybe a 'mini-game' where user guesses category of a random food
 * Or clicking a category of foods to list out a set of products
-* Sounds on clicks that resemble the item itself?# Project1
-# Project1
+* Sounds on clicks that resemble the item itself?
