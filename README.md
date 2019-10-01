@@ -2,7 +2,7 @@
 
 ## Project Purpose :
 
-Project *Food Nutri-licious* will consist of a site that can help you retrieve information on certain food products. Utilizing the food API, you can reach out to all sorts of food stuffs. Is this food for vegans? Got allergies to certain ingredients? Look no further, this shall be your salvation.
+Project *Food Nutri-licious* will consist of a site that can help you retrieve information on certain food products. Utilizing the food API, you can reach out to all sorts of food stuffs. Looking for vegan food? Look no further, this shall be your salvation.
 
 ### Current Features :
 
