@@ -14,9 +14,27 @@ const displayRecipes = (array) => {
   <img src=${recipe.image} />
   <p>Ingredients:<p>`
     recipe.usedIngredients.forEach((ingredient) => {
-      const ingredientP = document.createElement('p')
-      ingredientP.textContent = `${ingredient.original}`
-      recipeDiv.append(ingredientP)
+      if (recipe.usedIngredients !== 0) {
+        const ingredientP = document.createElement('p')
+        ingredientP.textContent = `${ingredient.original}`
+        recipeDiv.append(ingredientP)
+      } else if (recipe.usedIngredients === 0) {
+        recipe.missedIngredients.forEach((ingredient) => {
+          const ingredientP = document.createElement('p')
+          ingredientP.textContent = `${ingredient.original}`
+          recipeDiv.append(ingredientP)
+        })
+      } else if (recipe.usedIngredients !== 0 && recipe.missedIngredients !== 0) {
+        const ingredientP = document.createElement('p')
+        ingredientP.textContent = `${ingredient.original}`
+        recipeDiv.append(ingredientP)
+        recipe.missedIngredients.forEach((ingredient) => {
+          const ingredientP = document.createElement('p')
+          ingredientP.textContent = `${ingredient.original}`
+          recipeDiv.append(ingredientP)
+        }
+        )
+      }
     })
     display.append(recipeDiv);
   });

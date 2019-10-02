@@ -1,5 +1,22 @@
 body {
   font-family: 'Be Vietnam', sans-serif;
-  text-align: center;
+  background: linear-gradient(rgba(178, 79, 224, 0.5), rgba(199, 154, 233, 0.5));
   margin: 0;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  border: 2px solid rgba(47, 255, 75, 0.52);
+  width: 300px;
+
+}
+
+footer  {
+  display: flex;
+  align-content: flex-end;
+}
+
+h1 {
+  font-weight: bold;
 }
