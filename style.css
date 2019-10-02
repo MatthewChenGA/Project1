@@ -1,22 +1,41 @@
 body {
   font-family: 'Be Vietnam', sans-serif;
+  text-align: center;
   background: linear-gradient(rgba(178, 79, 224, 0.5), rgba(199, 154, 233, 0.5));
   margin: 0;
-  text-align: center;
 }
 
 header {
   display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
   border: 2px solid rgba(47, 255, 75, 0.52);
-  width: 300px;
-
+  color: rgb(11, 93, 43)
 }
 
-footer  {
+/* footer  {
   display: flex;
   align-content: flex-end;
-}
+} */
 
 h1 {
   font-weight: bold;
+  justify-content: center;
+}
+
+img {
+
+}
+
+.greenText {
+  color: rgb(73, 128, 0);
+}
+
+#ingredients {
+
+}
+
+button {
+
 }
