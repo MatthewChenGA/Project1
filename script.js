@@ -13,18 +13,19 @@ const displayRecipes = (array) => {
   <p>${recipe.title}</p>
   <img src=${recipe.image} />
   <p>Ingredients:<p>`
+    console.log(recipe.usedIngredients);
     recipe.usedIngredients.forEach((ingredient) => {
-      if (recipe.usedIngredients !== 0) {
+      if (recipe.usedIngredients.length !== 0) {
         const ingredientP = document.createElement('p')
         ingredientP.textContent = `${ingredient.original}`
         recipeDiv.append(ingredientP)
-      } else if (recipe.usedIngredients === 0) {
+      } else if (recipe.usedIngredients.length === 0) {
         recipe.missedIngredients.forEach((ingredient) => {
           const ingredientP = document.createElement('p')
           ingredientP.textContent = `${ingredient.original}`
           recipeDiv.append(ingredientP)
         })
-      } else if (recipe.usedIngredients !== 0 && recipe.missedIngredients !== 0) {
+      } else if (recipe.usedIngredients.length !== 0 && recipe.missedIngredients.length !== 0) {
         const ingredientP = document.createElement('p')
         ingredientP.textContent = `${ingredient.original}`
         recipeDiv.append(ingredientP)
@@ -40,6 +41,7 @@ const displayRecipes = (array) => {
   });
 }
 
+
 button.addEventListener("click", async () => {
   const response = await axios.get(`${ingredientUrl}${input.value}${apikey}`)
   let recipes = response.data
@@ -47,14 +49,3 @@ button.addEventListener("click", async () => {
   console.log(recipes)
 });
 
-// const displayRandom = (array) => {
-//   array.forEach((recipe) => {
-
-//   }
-//   )
-// }
-
-// button.addEventListener("click", async () => {
-//   const responseRandom = await axios.get(`${randomUrl}${input.value}${apikey}`)
-//   let recipesRandom =
-// })
