@@ -22,20 +22,37 @@ header {
 h1 {
   font-weight: bold;
   justify-content: center;
-}
+} 
 
-img {
-
+#info p {
+  color: red;
 }
 
 .greenText {
   color: rgb(73, 128, 0);
 }
 
-#ingredients {
+.brownText {
+  color: rgb(165,42,42);
+}
 
+#ingredients input[type=text]{
+  padding: 10px;
+  margin-right: 10px;
+  
 }
 
 button {
+  width: 50px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 1.2em;
+  min-width: 100px;
+}
 
+button:hover {
+  color: green;
+  border-color: aquamarine;
+  cursor: pointer;
 }
